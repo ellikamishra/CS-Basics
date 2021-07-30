@@ -1,0 +1,8 @@
+
+
+
+If L is a language accepted by PDA1 by final state, there exist a PDA2 that accepts L by empty stack i.e. L=L(PDA1)=L(PDA2)
+If L is a CFL then there exists a push down automata P accepting CF; ; by empty stack i.e. L=M(P)
+Let L is a language accepted by PDA1 then there exist a CFG X such that L(X)=M(P)
+
+PDA-https://www.geeksforgeeks.org/introduction-of-pushdown-automata/

@@ -1,0 +1,5 @@
+language type-https://www.tutorialspoint.com/automata_theory/chomsky_classification_of_grammars.htm
+https://www.geeksforgeeks.org/classification-of-context-free-grammars/
+The grammar which produces a palindrome set can be written as:
+S-> aSa | bSb | e | a | b
+L={e, a, b, aba, abbbaabbba…..}

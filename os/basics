@@ -1,0 +1,10 @@
+kernel-https://www.geeksforgeeks.org/kernel-in-operating-system/
+fork-https://www.geeksforgeeks.org/fork-system-call/
+pcb ,lifecylcle,stack-https://www.tutorialspoint.com/operating_system/os_processes.htm
+https://www.tutorialspoint.com/operating_system/os_properties.htm
+process queues-https://www.tutorialspoint.com/operating_system/os_process_scheduling.htm
+aging-https://www.geeksforgeeks.org/starvation-and-aging-in-operating-systems/
+A cooperating process can be affected by other processes executing in the system. Also it can affect other processes executing in the system. A process shares data with other processes, such a process is known as a cooperating process.
+
+Sceduling algo numerical
+

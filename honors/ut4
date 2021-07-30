@@ -1,0 +1,14 @@
+Standard Deviation, Normalization-Feature Scaling, Min-Max scaling, Bias, Variance, Regularization, Ridge Regression, Lasso Regression, Cross Validation Techniques-K-fold, LOOCV, Stratified K-fold, Grid Search CV, CV Error
+
+
+ut5
+Dimensionality Reduction Techniques-Principal Component Analysis, Discriminant Analysis, Feature Selection-Chi2   square   method,   Variance   Threshold,   Recursive   Feature   Elimination,   Outliers detection methods, Resampling-Random, under-sampling and over re-sampling
+
+
+pca-https://www.analyticsvidhya.com/blog/2016/03/pca-practical-guide-principal-component-analysis-python/s
+
+https://towardsdatascience.com/a-brief-overview-of-outlier-detection-techniques-1e0b2c19e561
+https://machinelearningmastery.com/random-oversampling-and-undersampling-for-imbalanced-classification/
+https://towardsdatascience.com/introduction-to-machine-learning-algorithms-linear-regression-14c4e325882a
+
+https://statisticsbyjim.com/basics/probability-distributions/

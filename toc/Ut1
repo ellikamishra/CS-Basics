@@ -1,0 +1,4 @@
+https://www.geeksforgeeks.org/regular-expressions-regular-grammar-and-regular-languages/
+https://www.geeksforgeeks.org/introduction-of-finite-automata/
+https://www.geeksforgeeks.org/mealy-and-moore-machines-in-toc/
+ The epsilon closure of the set q is the set that contains q, together with all the states which can be reached starting at q by following only epsilon transitions

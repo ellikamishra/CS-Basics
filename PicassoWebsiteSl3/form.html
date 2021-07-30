@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <title>PICASSO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+          
+
+          a{text-decoration:none;}
+            * {
+              box-sizing: border-box;    /*  dropdown text*/
+            }
+            .col1{
+              float:left;                /* navbar spacing  */
+              width: 15%; 
+              
+            }
+            .column {
+                                         /*gallery images css to fit 3 in one frame 
+                                         in respective categories*/
+              float: left;
+              width: 50%;
+              padding: 5%;
+            }
+            .row::after {
+              border-style: dotted;
+
+              content: "";
+              clear: both;
+              display: table;
+            }
+      #picasso{
+      -webkit-animation: moving 5s infinite;
+    animation: moving 5s infinite;
+            }                                     /*heading animation  move in x direction 
+                                                 from x=0px to 600px infinite times with 
+                                                 interval of 5s      */
+ @-webkit-keyframes moving {
+        from {-webkit-transform: translateX(0px);}
+    to {-webkit-transform: translateX(600px);}
+}
+@keyframes moving {
+    from {transform: translateX(0px);}
+    to {transform: translateX(600px);}
+}
+navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;                             /*navbar css*/
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;                                   /*dropdown properties*/
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;                 /*dropdown content properties*/
+  font-family: inherit; 
+  margin: 2px; 
+}
+.dropdown-content {
+  margin-top:5px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+                                                       /*on hover color change of dropdown*/
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+img{
+                                                      /*image gallery border*/
+border:solid 2px black;
+border-radius: 8px;
+}
+.button{
+
+  background-color:#fc3003; 
+  color:floralwhite;                               /*register button*/
+  margin-left: 45%;
+  padding: 15px 32px;
+}
+
+
+.container {
+ width: 100%;
+ max-width: 414px;
+ margin: 15px auto;
+ background-color: #232734;
+ padding: 25px 15px;
+}
+ h1{
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  opacity: 0.7;
+ }
+ 
+ form {
+  margin: 0px -15px;
+ }
+  .form-group {
+   width: 100%;
+   padding: 0px 15px;
+   background-image: linear-gradient(to right, #33344C, #232734);
+   border-bottom: 1px solid #414141;
+   
+  }
+   
+   .input-field {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 15px 0px;
+    
+    color: #FFF;
+    font-size: 18px;
+   }
+    .valid {
+     color: #44E444;
+    }
+    
+    .invalid {
+     color: #FF0000;
+    }
+    
+    .placeholder {
+     color: #53565A;
+    }
+   
+  
+  
+  .login-btn {
+   margin: 0px 15px;
+   display: inline-block;
+   padding: 10px 40px;
+   
+   color: #CC2B5E;
+   font-size: 20px;
+   background: none;
+   border: 2px solid #CC2B5E;
+   border-radius: 999px;
+   transition: 0.4s;
+   cursor: pointer;
+  }
+   .hover {
+    color: #FFF;
+    background-color: #CC2B5E;
+   }
+  
+ 
+
+         </style>
+    </head>
+<body onload="alert('Welcome!');">
+    <header style="display: inline-block;
+    background-image:linear-gradient(180deg,#fc3003,#fca903);width: 100%;" >
+      <div class='navbar'>
+    <div class="col1">
+      <a href="/1.html">
+      <img src="https://previews.123rf.com/images/alkal82/alkal821107/alkal82110700005/10100106-artists
+      -palette-isolated-on-white-computer-generated-image-.jpg" alt="palete"
+    style="height: 15%; width: 50%; margin-left:15%;margin-top: 1%;">
+  </a>
+    </div>
+    <div class="col1">
+      <div  class='dropdown'>
+      <a href="1.html">
+        <h3 class ='dropbtn'style="color:whitesmoke;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+          margin-left: 10%;font-size:20px">
+           Home </h3>
+          
+      
+      </a>
+    
+      <div class="dropdown-content">
+        <a href="/ma.html">Modern</a>
+        <a href="/ip.html">Indian</a>
+        <a href="/ab.html">Abstract</a>
+        <a href="/ph.html">Photography</a>
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="col1">
+        
+        <a href="/ma.html">
+        <h3 style="color:whitesmoke;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 
+        sans-serif; margin-left: 10%;font-size:20px">
+         Modern</h3>
+        </a>
+      
+        </div>
+        <div class="col1">
+          <a href='/ip.html'>
+          <h3 style="color:whitesmoke;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+           sans-serif; margin-left: 10%;font-size:20px">
+           Indian </h3>
+          </a>
+          </div>
+          <div class="col1">
+            <a href="/ab.html">
+            <h3 style="color:whitesmoke;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 
+            sans-serif; margin-left: 10%;font-size:20px">
+             Abstract</h3>
+            </a>
+            </div>
+            <div class="col1">
+              <a href="/ph.html">
+              <h3 style="color:whitesmoke;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 
+              'Trebuchet MS', sans-serif; margin-left: 40%;font-size:20px">
+               Photography </h3>
+              </a>
+              </div>
+              
+            </div>
+    <h1 id="picasso"style="color:whitesmoke;font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size:50px;margin-top: 10%;">PICASSO
+
+</h1>
+
+</header>
+<br>
+<br>
+<br>
+
+<h1 class="center">Feedback Form</h1>
+<form action="" method="get" class="margin-left" name="login-form" onsubmit=" return valid_form()" method="POST"><br/> 
+<!-- First Name:      <input  id="name"type="text" name="fname"  value="" onkeypress="return (event.charCode > 64 && 
+event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required/><br/> <br/>
+Middle Name:      <input  id="name"type="text" name="mname"  value="" onkeypress="return (event.charCode > 64 && 
+event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"/><br/> <br/>
+Last Name:        <input  id="name"type="text" name="lname"  value="" onkeypress="return (event.charCode > 64 && 
+event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" class="form-control"/><br/> <br/>
+Emailid:          <input  id="inputmail"type="text" name="mail" value="" onblur="valid_email()"/>
+<br/><br/>
+Password:          <input  id="inputpass"type="password" name="pass"  value="" />
+<br/><br/>
+MobileNumber:      <input id="inputmob"  type="text" name="mobile" value="" placeholder="10 digit mobile number" maxlength="10" />
+<br/><br/>
+Pin:               <input id="inputpin" type="text" name="pin"/>
+<br/><br/>
+Address:           <input id="inputpin" type="text" name="address"/> -->
+
+
+<div class="form-group">
+  <label for="username">First Name</label>
+  <input type="text" placeholder="florinpop17" id="fname"onkeypress="return (event.charCode > 64 && 
+  event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required />
+</div>
+<div class="form-group">
+  <label for="username">Middle Name</label>
+  <input type="text" placeholder="florinpop17" id="mname"onkeypress="return (event.charCode > 64 && 
+  event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required />
+</div>
+<div class="form-group">
+  <label for="username"> Last Name</label>
+  <input type="text" placeholder="florinpop17" id="lname"onkeypress="return (event.charCode > 64 && 
+  event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required />
+</div>
+
+<div class="form-group">
+  <input type="text" name="email" id="email" placeholder="Email-id" class="input-field" />
+ </div>
+<div class="form-group">
+  <input type="password" name="password" id="password" placeholder="Password" class="input-field" />
+ </div>
+
+<br/><br/>
+Select Country: 
+<select name="state" id="countySel" size="1">
+    <option value="India" selected="selected">India</option>
+    <option value="India" selected="selected">South Korea</option>
+    <option value="India" selected="selected">Japan</option>
+    <option value="India" selected="selected">Spain</option>
+    </select>
+    <br/><br/>
+Gender:Male<input type="radio" name="gender" value="male" required/>Female<input type="radio" name="gender" value="female" /><br/> <br/>
+Qualification:<br/> Btech/BE <input type="checkbox" name="qualification[]" value="be" /> MBA/Masters <input type="checkbox" name="hobbies[]" value="masters" /> PHD <input type="checkbox" name="hobbies[]" value="hockey" />
+<br/><br/>
+
+ Comments
+  <br/>
+  <textarea placeholder="Enter Comments" cols="50" rows="6" name="comments"></textarea><br/> 
+  <input type="submit" name="submit" value="Submit"  />
+</form>
+
+
+</body>
+<script>
+/*$(document).ready(function(){
+    $("#inputname").keydown(function(event){
+        var inputValue = event.value;
+        if(!(inputValue >= 65 && inputValue <= 120) && (inputValue != 32 && inputValue != 0)){
+            event.preventDefault();
+        }
+    });
+});
+$(document).ready(function(){
+    $("#inputmail").keypress(function(event){
+    var inputValue=event.value;
+    var mailformat=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+   if(!inputValue.match(mailformat))
+    {
+        $(inputmail).focus;
+        alert("Invalid mail");
+    } }); });
+    $(document).ready(function(){
+    $("#inputpass").keypress(function(event){
+    var inputValue=event.value;
+    var decimal= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+
+    if(!inputValue.match(decimal))
+    {
+        $(inpass).focus;
+        alert("Invalid password")
+    }
+
+
+    });
+    
+    });*/
+
+/*function valid_form()
+{   
+    var mailformat=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var mail_form=document.forms["form"]["mail"].value;
+    if(!mail_form.match(mailformat)) 
+    {
+        alert("Invalid mail");
+        //document.getElementsByName("mail_form").innerHTML="Re-enter email"
+        return false;
+    }
+    var decimal= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,16}$/;
+    var pass_form=document.forms["form"]["pass"].value;
+    if(!pass_form.match(decimal)) 
+    {
+        alert("Re-enter password");
+        return false;
+    }
+    var pin_form=document.forms["form"]["pin"].value;
+    if(pin_form.length!=6)
+    {
+        alert("Re-enter pin");
+        return false;
+    }
+
+    var reg=/^[a-z\d\-_\s]+$/;
+    var ad_form=document.forms["form"]["address"].value;
+    if(!ad_form.match(reg)) 
+    {
+        alert("Invalid address");
+        return false;
+    }
+  
+
+    return true;
+}
+function valid_mail()
+{
+  var mailformat=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var mail_form=document.forms["form"]["mail"].value;
+    if(!mail_form.match(mailformat)) 
+    {
+        alert("Invalid mail");
+        //document.getElementsByName("mail_form").innerHTML="Re-enter email"
+        return false;
+    }
+  var atposition=mail_form.indexOf("@");  
+  var dotposition=mail_form.lastIndexOf(".");  
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  } 
+
+}*/
+const form = document.querySelector('#login-form');
+const pass_reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+const mailformat=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+let username = form.elements.namedItem("username");
+let password = form.elements.namedItem("password");
+
+username.addEventListener('input', validate);
+password.addEventListener('input', validate);
+
+form.addEventListener('submit', function (e) {
+ e.preventDefault();
+ 
+ alert('SUBMITTED');
+ return true;
+});
+
+function validate (e) {
+ if (e.target.name == "password") {
+  if (pass_reg.test(e.target.value)) {
+   e.target.classList.add('valid');
+   e.target.classList.remove('invalid');
+  } else {
+   e.target.classList.add('invalid');
+   e.target.classList.remove('valid');
+  }
+ }
+ 
+ if (e.target.name == "email") {
+  if (mailformat.test(e.target.value)) {
+   e.target.classList.add('valid');
+   e.target.classList.remove('invalid');
+  } else {
+   e.target.classList.add('invalid');
+   e.target.classList.remove('valid');
+  }
+ }
+}
+
+</script>
+</html>

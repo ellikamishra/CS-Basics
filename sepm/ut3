@@ -1,0 +1,16 @@
+https://www.geeksforgeeks.org/software-engineering-software-quality-assurance/
+
+https://www.tutorialspoint.com/management_concepts/gantt_chart_tool.htm
+
+https://www.visual-paradigm.com/guide/project-management/what-is-work-breakdown-structure/
+
+Program Evaluation Review Technique (PERT) is a project management planning tool used to calculate the amount of time it will take to realistically finish a project. PERT charts are used to plan tasks within a project — making it easier to schedule and coordinate team members. 
+ERT is similar to critical path in that they are both used to visualize the timeline and the work that must be done for a project. However with PERT, you create three different time estimates for the project:
+
+    The shortest possible amount of time each task will take
+    The most probable amount of time
+    The longest amount of time tasks might take if things don't go as planned
+
+PERT is calculated backward from a fixed end date since contractor deadlines typically cannot be moved.
+
+critical path-https://www.wrike.com/blog/critical-path-is-easy-as-123/

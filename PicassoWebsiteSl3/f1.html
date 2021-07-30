@@ -1,0 +1,228 @@
+
+
+<html>
+
+<style>
+
+   
+   body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to bottom right,white,#fca903);
+    min-height: 100vh;
+   }
+   
+   .container {
+    width: 100%;
+    max-width: 414px;
+    margin: 15px auto;
+    background-color:transparent;
+    padding: 25px 15px;
+   }
+    h1{
+     color:black;
+     font-size: 18px;
+     font-weight: 500;
+     margin-bottom: 15px;
+     opacity: 0.7;
+    }
+    
+    form {
+     margin: 0px -15px;
+    }
+     .form-group {
+      width: 100%;
+      padding: 0px 15px;
+      background-image:black;
+      border-bottom: 1px solid #414141;
+      
+     }
+      
+      .input-field {
+       display: block;
+       width: 100%;
+       border: none;
+       outline: none;
+       background: none;
+       padding: 15px 0px;
+       
+       color:black;
+       font-size: 18px;
+      }
+       .valid {
+        color: #44E444;
+       }
+       
+       .invalid {
+        color: #FF0000;
+       }
+       
+       .placeholder {
+        color: #53565A;
+       }
+      
+     
+     
+     .login-btn {
+      margin: 0px 15px;
+      display: inline-block;
+      padding: 10px 40px;
+      
+      color: #CC2B5E;
+      font-size: 20px;
+      background: none;
+      border: 2px solid #CC2B5E;
+      border-radius: 999px;
+      transition: 0.4s;
+      cursor: pointer;
+     }
+      .hover {
+       color: #FFF;
+       background-color:,#fc3003;
+      }
+     
+    
+   </style>
+<body onload="alert('Welcome!');">
+<div class="container" >
+    <h1><b>Feedback</b></h1>
+
+
+    <form id="login-form" name="login-form">
+        <div class="form-group">
+            <input type="text" name="fname" id="fname" placeholder="first name" class="input-field" onkeypress="return (event.charCode > 64 && 
+            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required /> 
+            <!-- Allow letters as input only for name making it a required field-->
+           </div>
+           <br/>
+           <br/>
+           <div class="form-group">
+            <input type="text" name="mname" id="mname" placeholder="middle name" class="input-field"onkeypress="return (event.charCode > 64 && 
+            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required  />
+           </div>
+           <br/>
+           <br/>
+           <div class="form-group">
+            <input type="text" name="lname" id="lname" placeholder="last name" class="input-field"onkeypress="return (event.charCode > 64 && 
+            event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required  />
+           </div>
+           <br/>
+           <br/>
+     <div class="form-group">
+      <input type="text" name="email" id="email" placeholder="email" class="input-field" />
+     </div>
+     <!-- if format of password and email dont match to standard make poniter red and if correct make it green -->
+     <br/>
+           <br/>
+     <div class="form-group">
+      <input type="password" name="password" id="password" placeholder="Password" class="input-field" />
+     </div>
+     <br/>
+           <br/>
+     <div class="form-group">
+        <input type="text" name="mobile" id="mobile" placeholder="mobile" class="input-field" maxlength="10"onkeypress="return ((event.charCode > 47 &&event.charCode< 58))" required/>
+       </div>  
+       <!-- Allow only numeric input of maxlength 10 for mobile -->
+       <br/>
+           <br/>
+       <div class="form-group">
+        <input type="text" name="address" id="address" placeholder="address" class="input-field" />
+       </div>
+       <br/>
+           <br/>
+       <div class="form-group">
+        <input type="text" name="pin" id="pin" placeholder="pin" class="input-field" maxlength="6"onkeypress="return ((event.charCode > 47 &&event.charCode< 58))" required  />
+       <!-- Allow only numeric input of maxlength 6 for pin -->
+      </div>
+       <br/>
+       <br/>
+       <div class="form-group">
+     Select Country: 
+<select name="state" id="countySel" size="1">
+    <option value="India" selected="selected">India</option>
+    <option value="India" selected="selected">South Korea</option>
+    <option value="India" selected="selected">Japan</option>
+    <option value="India" selected="selected">Spain</option>
+    </select>
+    <!-- dropdown selectcountry -->
+    <br/>
+    <br/>
+    </div>
+
+    <br/><br/>
+    <div class="form-group">
+Gender:Male<input type="radio" name="gender" value="male" required/>Female<input type="radio" name="gender" value="female" /><br/> <br/></div>
+<!-- compulsory radio input for gender -->
+<div class="form-group">
+  <br/>
+Qualification:<br/> Btech/BE <input type="checkbox" name="qualification[]" value="be" /> MBA/Masters <input type="checkbox" name="hobbies[]" value="masters" /> PHD <input type="checkbox" name="hobbies[]" value="hockey" />
+<!-- qualification checkbox -->
+<br/>
+<br/>
+</div>
+<br/><br/>
+<div class="form-group">
+  
+ Comments
+  <br/>
+  <br/>
+  <textarea placeholder="Enter Comments" cols="50" rows="6" name="comments"></textarea><br/> 
+  <br/>
+</div>
+<!-- input comments -->
+<br/>
+<br/>
+  <input type="submit" value="LOG IN" class="login-btn" />
+    </form>
+   </div>
+  </body>
+   <!-- script tag including validations  -->
+<script> 
+const form = document.querySelector('#login-form');
+    const pass_reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+    const mail_reg=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const reg=/^[a-z\d\-_\s]+$/;
+    let username = form.elements.namedItem("email");
+    let password = form.elements.namedItem("password");
+    let address=form.elements.namedItem("address");
+    email.addEventListener('input', validate);
+    password.addEventListener('input', validate);
+    address.addEventListener('input',validate);
+    form.addEventListener('submit', function (e) {
+     e.preventDefault();
+     
+     alert('SUBMITTED');
+     return true;
+    });
+    
+    function validate (e) {
+     if (e.target.name == "password") {
+      if (pass_reg.test(e.target.value)) {
+       e.target.classList.add('valid');
+       e.target.classList.remove('invalid');
+      } else {
+       e.target.classList.add('invalid');
+       e.target.classList.remove('valid');
+      }
+     }
+     
+     if (e.target.name == "email") {
+      if (mail_reg.test(e.target.value)) {
+       e.target.classList.add('valid');
+       e.target.classList.remove('invalid');
+      } else {
+       e.target.classList.add('invalid');
+       e.target.classList.remove('valid');
+      }
+     }
+     if (e.target.name == "address") {
+      if (reg.test(e.target.value)) {
+       e.target.classList.add('valid');
+       e.target.classList.remove('invalid');
+      } else {
+       e.target.classList.add('invalid');
+       e.target.classList.remove('valid');
+      }
+     }
+     
+    }</script>
+   </html>
